@@ -1,9 +1,18 @@
 import java.util.Scanner;
 /**
- *
- * @author 
+ * Methods Example
+ * @author Liana Bazzarella 
  */
 public class Main {
+
+  public static void sayHello(){
+    System.out.println("Hello World!");
+  }
+
+  // prints hello to a person
+  public static void sayHello(String name){
+    System.out.println("Hello" + name);
+  }
 
   // a method to calculate the area of a rectangle given the width and the length
   public static double areaOfRectangle( double width, double length){
@@ -21,7 +30,7 @@ public class Main {
 
     // using the method without a scanner
     double answer = areaOfRectangle(2.0,5.0);
-    System.out.print(answer);
+    System.out.println(answer);
 
     // using the method with a scanner
     System.out.println("Please enter a width");
@@ -30,6 +39,9 @@ public class Main {
     double length = input.nextDouble();
     // calculate the area using the input
     double area = areaOfRectangle(width, length);
-    
+    System.out.println(area);
+
+    // print hello World
+    sayHello();
   }
 }
